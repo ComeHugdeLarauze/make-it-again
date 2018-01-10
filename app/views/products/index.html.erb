@@ -1,0 +1,81 @@
+<!-- <div class="main-container"> -->
+
+  <div class="home-title">
+
+    <div class="title-presentation text-center">
+      <h2><strong>Futur Amazone</strong></h2>
+      <p>Vôtre futur Amazon</p>
+    </div>
+
+    <div class="frame-promises text-center">
+      <div class="promise">
+        <div class="promise-icon">
+          <%= image_tag 'balloons.svg', height: 50, width: 50, crop: :fill %>
+        </div>
+        <div class="promise-description">
+          <p>Produit 100% <strong>remis à neuf</strong></p>
+        </div>
+      </div>
+      <div class="promise">
+        <div class="promise-icon">
+          <%= image_tag 'approve-invoice.svg', height: 50, width: 50, crop: :fill %>
+        </div>
+        <div class="promise-description">
+          <p>Garantie <strong>jusqu'à 6 mois</strong></p>
+        </div>
+      </div>
+      <div class="promise">
+        <div class="promise-icon">
+          <%= image_tag 'donation.svg', height: 50, width: 50, crop: :fill %>
+        </div>
+        <div class="promise-description">
+          <p>Satisfait <strong>ou remboursé</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <%= render 'shared/carousel' %>
+
+  <div class="product-card-category">
+
+    <div class="row">
+      <div class="col-xs-12">
+        <h3>Categories <strong>poid lourd</strong> 🙂</h3>
+
+        <div class="cards">
+
+          <div class="card-category">
+            <div class="card-body" style="background-image: url('<%= image_path 'clothe.jpeg' %>')"></div>
+            <div class="card-footer text-center">
+              <p><strong>Manteau</strong></p>
+            </div>
+            <a class="card-link" href="#"></a>
+          </div>
+
+          <div class="card-category">
+            <div class="card-body" style="background-image: url('<%= image_path 'manufacture.jpeg' %>')"></div>
+            <div class="card-footer text-center">
+              <p><strong>Chemise</strong></p>
+            </div>
+            <a class="card-link" href="#"></a>
+          </div>
+
+          <div class="card-category">
+            <div class="card-body" style="background-image: url('<%= image_path 'eco.jpeg' %>')"></div>
+            <div class="card-footer text-center">
+              <p><strong>Pantalon</strong></p>
+            </div>
+            <a class="card-link" href="#"></a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <%= render 'shared/grid' %>
+<!-- </div> -->
+
+

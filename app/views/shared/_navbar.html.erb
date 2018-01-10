@@ -1,0 +1,73 @@
+<div class="navbar-wagon">
+  <!-- Logo -->
+  <div class="navbar-left-side">
+    <%= link_to root_path, class: "navbar-wagon-brand" do %>
+      <%= image_tag "logo.png", height: 50 %>
+    <% end %>
+
+    <!-- search -->
+    <div class="search-navbar">
+      <form class="form-inline">
+        <input class="form-control mr-sm-2" type="text" placeholder="Chemise">
+        <button class="btn-search-navbar my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Right Navigation -->
+  <div class="navbar-wagon-right hidden-xs hidden-sm">
+
+      <!-- Links when logged in -->
+      <div class="btn-navabar-right">
+        <div class="card-navbar">
+          <%= image_tag "SAV.svg", height: 30, width: 30 %>
+          <%= link_to "SAV", "#", class: "navbar-wagon-item navbar-wagon-link" %>
+        </div>
+        <div class="card-navbar">
+          <%= image_tag "user.svg", height: 30, width: 30 %>
+          <%= link_to "User", "#", class: "navbar-wagon-item navbar-wagon-link" %>
+        </div>
+        <div class="card-navbar">
+          <%= image_tag "purchase.svg", height: 30, width: 30 %>
+          <%= link_to "Panier", "#", class: "navbar-wagon-item navbar-wagon-link" %>
+        </div>
+      </div>
+      <!-- Avatar with dropdown menu -->
+      <div class="navbar-wagon-item">
+        <div class="dropdown">
+          <%= image_tag "http://kitt.lewagon.com/placeholder/users/ComeHugdeLarauze", class: "avatar dropdown-toggle", id: "navbar-wagon-menu", "data-toggle" => "dropdown" %>
+          <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+            <li>
+              <%= link_to "#" do %>
+                <i class="fa fa-user"></i> <%= t(".profile", default: "Profile") %>
+              <% end %>
+            </li>
+            <li>
+              <%= link_to "#" do %>
+                <i class="fa fa-cog"></i>  <%= t(".settings", default: "Settings") %>
+              <% end %>
+            </li>
+            <li>
+              <%= link_to destroy_user_session_path, method: :delete do %>
+                <i class="fa fa-sign-out"></i>  <%= t(".sign_out", default: "Log out") %>
+              <% end %>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+  </div>
+
+  <!-- Dropdown list appearing on mobile only -->
+  <div class="navbar-wagon-item hidden-md hidden-lg">
+    <div class="dropdown">
+      <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
+      <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+        <li><a href="#">Some mobile link</a></li>
+        <li><a href="#">Other one</a></li>
+        <li><a href="#">Other one</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+

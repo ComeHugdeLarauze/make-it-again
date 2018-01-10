@@ -1,0 +1,28 @@
+// Specific CSS for your home-page
+.home-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  margin-right: 70px;
+  margin-left: 70px;
+  margin-top: 30px;
+  border-radius:1px;
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07)
+}
+
+.frame-promises {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  padding-top: 15px;
+  padding-right: 40px;
+  padding-left: 40px;
+  width: 80%;
+  margin-bottom: -20px;
+  margin-top: 10px;
+  background-color: white;
+  border-radius:1px;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.09)
+}
+
